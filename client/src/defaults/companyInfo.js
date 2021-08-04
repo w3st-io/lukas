@@ -1,8 +1,8 @@
 // [EXPORT] //
 module.exports = {
-	companyName: 'Luka\'s',
+	companyName: 'Balance Within',
 	
-	companyCaption1: 'Deli & Restaurant',
+	companyCaption1: 'Embrace wellness with energy healing',
 	companyCaption2: '',
 
 	companyLogo: require('../assets/images/logo.svg'),

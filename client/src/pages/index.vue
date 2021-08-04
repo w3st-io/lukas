@@ -5,7 +5,7 @@
 			:showContent="true"
 			:mainText="'Healing for the Mind, Body and Soul'"
 			:slideObjs="DPage.caraousel"
-			:maxHeight="400"
+			:maxHeight="600"
 			:rellaxNumber="1"
 			class="mb-4 shadow"
 			data-aos="fade-up"
@@ -13,26 +13,26 @@
 
 		<!-- Main Details -->
 		<BContainer class="mb-4 text-center">
-			<BCard bg-variant="light" class="rounded-0 shadow">
+			<BCard bg-variant="light" border-variant="primary" class="rounded shadow">
 				<!-- Captions -->
-				<h1 class="font-weight-bold text-primary">
+				<h2 data-aos="fade" class="font-weight-bold text-primary">
 					{{ DPage.mainDetails.caption1 }}
-				</h1>
+				</h2>
 				
 				<!-- Address -->
 				<a :href="DPage.mainDetails.googleMapsLink">
-					<p class="h4 mb-4 text-center font-weight-bold text-secondary">
-						{{ DPage.mainDetails.address }}
+					<p class="h6 mb-4 text-center font-weight-bold text-secondary">
+						Our Hours
 					</p>
 				</a>
 
 				<!-- Hours of Operation -->
-				<ul class="mb-4 text-dark">
+				<ul class="m-0 mb-4 p-0 text-dark">
 					<li
 						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
 						:key="index"
-						class="m-0 list-unstyled"
-					><p class="h5">{{ hoo.days }} - {{ hoo.hours }}</p></li>
+						class="m-0 list-unstyled text-center"
+					><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 				</ul>
 
 				<RouterLink to="/book" class="h5 text-secondary">
@@ -101,13 +101,13 @@
 							</p>
 
 							<div class="w-100 text-center">
-								<RouterLink to="/about">
+								<a href="/services/#reiki">
 									<BButton
 										variant="primary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>
-								</RouterLink>
+								</a>
 							</div>
 						</div>
 					</BCol>
