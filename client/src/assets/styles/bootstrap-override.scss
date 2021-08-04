@@ -1,0 +1,15 @@
+$theme-colors: (
+    'primary': rgb(212, 85, 26),
+    'secondary': #008080,
+    'info': yellow,
+);
+
+
+// [IMPORT] //
+@import 'bootstrap/scss/bootstrap.scss';
+
+
+// [CONTAINER] //
+@media (min-width: 1600px) {
+    .container { max-width: 1500px; }
+}
