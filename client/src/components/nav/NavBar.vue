@@ -1,11 +1,11 @@
 <template>
-	<div class="w-100 pt-4 bg-light border-bottom border-primary">
+	<div class="w-100 pt-4 bg-info border-bottom border-primary">
 		<BContainer bg-variant="dark" class="py-3 d-flex container-fluid">
 			<!-- Title -->
 			<div class="text-center" style="">
 				<RouterLink to="/" class="text-decoration-none">
-					<h3 class="m-0 font-weight-bold">{{ companyInfo.companyName }}</h3>
-					<h6 class="m-0 small font-weight-bold text-secondary">
+					<h1 class="m-0 font-weight-bold">{{ companyInfo.companyName }}</h1>
+					<h6 class="m-0 px-2 font-weight-bold bg-secondary text-light">
 						{{ companyInfo.companyCaption1 }}
 					</h6>
 				</RouterLink>
