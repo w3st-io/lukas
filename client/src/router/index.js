@@ -12,8 +12,6 @@ import directions from '@/pages/directions'
 import faq from '@/pages/faq'
 import gallery from '@/pages/gallery'
 import ourTeam from '@/pages/our-team'
-import payment from '@/pages/payment'
-import payment_success from '@/pages/payment/success'
 import menu from '@/pages/menu'
 import services from '@/pages/services'
 import services_chakraBalancing from '@/pages/services/chakra-balancing'
@@ -74,16 +72,7 @@ const router = new VueRouter({
 			name: 'our-team',
 			component: ourTeam,
 		},
-		{
-			path: '/payment/:product_id',
-			name: 'payment',
-			component: payment,
-		},
-		{
-			path: '/payment/success',
-			name: 'payment_success',
-			component: payment_success,
-		},
+		// Menu //
 		{
 			path: '/menu',
 			name: 'menu',

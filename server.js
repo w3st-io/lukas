@@ -11,11 +11,8 @@ const path = require('path')
 const config = require('./s-config')
 const Functionality = require('./s-middleware/Functionality')
 
-const a_payments = require('./s-routes/api/payments')
-
 const p_ = require('./s-routes/pages')
 const p_about = require('./s-routes/pages/about')
-const p_payments = require('./s-routes/pages/payment')
 const p_services = require('./s-routes/pages/services')
 
 
@@ -46,11 +43,8 @@ app.use(cors())
 
 
 // [USE] Personal // API // Pages //
-app.use('/api/payments', Functionality.paymentsSystem(), a_payments)
-
 app.use('/pages', p_)
 app.use('/pages/about', p_about)
-app.use('/pages/payments', p_payments)
 app.use('/pages/services', p_services)
 
 
