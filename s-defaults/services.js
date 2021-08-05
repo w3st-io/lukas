@@ -1,2 +1,1 @@
-// [EXPORT] //
 module.exports = []

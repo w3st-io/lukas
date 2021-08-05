@@ -13,6 +13,7 @@ const Functionality = require('./s-middleware/Functionality')
 
 const p_ = require('./s-routes/pages')
 const p_about = require('./s-routes/pages/about')
+const p_menu= require('./s-routes/pages/menu')
 const p_services = require('./s-routes/pages/services')
 
 
@@ -45,6 +46,7 @@ app.use(cors())
 // [USE] Personal // API // Pages //
 app.use('/pages', p_)
 app.use('/pages/about', p_about)
+app.use('/pages/menu', p_menu)
 app.use('/pages/services', p_services)
 
 
