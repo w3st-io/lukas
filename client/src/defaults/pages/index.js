@@ -1,7 +1,5 @@
 const companyInfo = require('../companyInfo')
-const services = require('./services')
 
-// [EXPORT] //
 module.exports = {
 	// Caraousel Slider //
 	caraousel: [
@@ -43,9 +41,9 @@ module.exports = {
 		},
 
 		row2: {
-			header: services.services[0].title,
+			header: '',
 			
-			text: services.services[0].description,
+			text: '',
 
 			image: require('../../assets/images/pages/index/wwcdfy.jpg'),
 		},

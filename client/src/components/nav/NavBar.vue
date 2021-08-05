@@ -28,8 +28,9 @@
 					:to="button.path"
 				>
 					<BButton
-						variant="none"
-						class="mx-1 px-1 py-0 font-weight-bold text-secondary"
+						variant="secondary"
+						class="mx-1"
+						size="sm"
 					>
 						<span v-if="button.navIcon" v-html="button.navIcon"></span>
 						<span v-else>{{ button.text }}</span>
