@@ -15,6 +15,7 @@ export default new Vuex.Store({
 		loading: false,
 		
 		showMenu: false,
+		navbarSpacer: false,
 
 		userLogged: false,
 		user_decoded: {},

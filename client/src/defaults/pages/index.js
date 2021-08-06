@@ -6,17 +6,18 @@ module.exports = {
 		{
 			caption:'',
 			text: '',
-			img: require('../../assets/images/pages/index/slide1.jpg'),
+			img: 'https://images2.imgbox.com/46/5e/GsDTZKNN_o.jpg',
 		},
 		{
 			caption: '',
 			text: '',
-			img: require('../../assets/images/pages/index/slide2.jpg'),
+			img: 'https://images2.imgbox.com/f0/8e/DsCHoGCu_o.jpg',
 		},
 	],
 
 	// Main Details Company Info //
 	mainDetails: {
+		companyName: companyInfo.companyName,
 		caption1: companyInfo.companyCaption1,
 		address: companyInfo.address,
 		googleMapsLink: companyInfo.googleMapsLink,

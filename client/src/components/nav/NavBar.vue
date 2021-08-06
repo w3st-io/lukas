@@ -1,13 +1,23 @@
 <template>
-	<div class="w-100 border-bottom border-primary position-absolute nav">
+	<div class="w-100 position-absolute nav shadow">
 		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid py-3">
 			<!-- Title -->
 			<div class="" style="">
 				<RouterLink to="/" class="text-decoration-none">
-					<h1 class="m-0 font-weight-bold title">{{ companyInfo.companyName }}</h1>
-					<h6 class="m-0 px-2 font-weight-bold bg-secondary text-light">
-						{{ companyInfo.companyCaption1 }}
-					</h6>
+					<h1
+						class="m-0 font-weight-bold title text-center"
+						style="font-size: 3em;"
+					>{{ companyInfo.companyName }}</h1>
+					<h4
+						class="
+							m-0
+							px-2
+							font-weight-bold
+							bg-secondary
+							text-light
+							text-center
+						"
+					>{{ companyInfo.companyCaption1 }}</h4>
 				</RouterLink>
 			</div>
 
@@ -52,7 +62,7 @@
 				<div class="w-100">
 					<SocialMediaPlug
 						size="1.8x"
-						variant="primary"
+						variant="light"
 						class="d-none d-sm-block float-lg-right"
 					/>
 				</div>

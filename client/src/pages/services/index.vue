@@ -47,6 +47,14 @@
 				services: []
 			}
 		},
+
+		created() {
+			this.$store.state.navbarSpacer = true
+		},
+
+		destroyed() {
+			this.$store.state.navbarSpacer = false
+		},
 	}
 </script>
 

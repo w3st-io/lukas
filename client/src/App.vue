@@ -3,6 +3,12 @@
 		<!-- UI -->
 		<NavBar />
 
+		<div
+			v-if="$store.state.navbarSpacer"
+			id="navbar-spacer"
+			style="height: 149.02px;"
+		/>
+
 		<!-- RouterView -->
 		<RouterView />
 

@@ -3,28 +3,31 @@
 		<!-- Caraousel -->
 		<BCarousel
 			:showContent="true"
-			:mainText="'Healing for the Mind, Body and Soul'"
+			:mainText="'Food that brings you closer to home..'"
 			:slideObjs="DPage.caraousel"
 			:maxHeight="600"
 			:rellaxNumber="1"
-			class="mb-4 shadow"
+			class="mb-5 shadow"
 			data-aos="fade-up"
 		/>
 
 		<!-- Main Details -->
-		<BContainer class="mb-4 text-center">
+		<BContainer class="mb-5 text-center">
 			<BCard bg-variant="light" border-variant="primary" class="rounded shadow">
 				<!-- Captions -->
 				<h2 data-aos="fade" class="font-weight-bold text-primary">
+					{{ DPage.mainDetails.companyName }}
+				</h2>
+
+				<!-- Captions -->
+				<h2 data-aos="fade" class="font-weight-bold text-secondary">
 					{{ DPage.mainDetails.caption1 }}
 				</h2>
 				
 				<!-- Address -->
-				<a :href="DPage.mainDetails.googleMapsLink">
-					<p class="h6 mb-4 text-center font-weight-bold text-secondary">
-						Our Hours
-					</p>
-				</a>
+				<p class="h4 text-center font-weight-bold text-dark">
+					<span class="px-3 bg-info">Our Hours</span>
+				</p>
 
 				<!-- Hours of Operation -->
 				<ul class="m-0 mb-4 p-0 text-dark">
@@ -32,12 +35,8 @@
 						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
 						:key="index"
 						class="m-0 list-unstyled text-center"
-					><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
+					><p class="h4">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 				</ul>
-
-				<RouterLink to="/book" class="h5 text-secondary">
-					{{ DPage.mainDetails.text }}
-				</RouterLink>
 			</BCard>
 		</BContainer>
 
