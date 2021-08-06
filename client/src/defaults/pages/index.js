@@ -32,9 +32,9 @@ module.exports = {
 		},
 
 		row2: {
-			header: '',
+			header: 'Our Food',
 			
-			text: '',
+			text: 'insert food details here',
 
 			image: require('../../assets/images/pages/index/wwcdfy.jpg'),
 		},

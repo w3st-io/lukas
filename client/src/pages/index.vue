@@ -55,9 +55,9 @@
 
 		<!-- More Details -->
 		<BContainer fluid class="mb-5 bg-white border-top border-secondary shadow-lg">
-			<BContainer class="pb-3">
+			<BContainer class="py-3">
 				<!-- Black Marble Now Booking New Clients -->
-				<BRow class="mb-3" data-aos="fade">
+				<BRow v-if="0 == 1" class="mb-3" data-aos="fade">
 					<Transition name="fade">
 						<BCol cols="12">
 							<img
@@ -72,14 +72,14 @@
 									to="book"
 									class="font-weight-bold text-decoration-none"
 								>
-									<h2 class="font-weight-bold text-primary">
+									<h2 class="font-weight-bold text-light">
 										Now Booking New Clients
 									</h2>
 								</RouterLink>
 								
 
 								<BButton
-									variant="secondary"
+									variant="light"
 									size="lg"
 									class="mt-3"
 									@click="redirectCompanyInfo()"
@@ -93,17 +93,17 @@
 				<BRow class="mb-3">
 					<BCol cols="12" sm="8">
 						<div v-if="show">
-							<h2 class="text-primary font-weight-bold">
+							<h2 class="font-weight-bold text-primary">
 								{{ DPage.moreDetails.row2.header }}
 							</h2>
-							<p class="mb-4 h5 text-secondary">
+							<p class="mb-4 h5 text-dark">
 								{{ DPage.moreDetails.row2.text }}
 							</p>
 
 							<div class="w-100 text-center">
 								<a href="/services/#reiki">
 									<BButton
-										variant="primary"
+										variant="outline-secondary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>
@@ -139,7 +139,7 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
 							</h2>
-							<p class="mb-4 h5 text-secondary">
+							<p class="mb-4 h5 text-dark">
 								{{ DPage.moreDetails.row3.description1 }}
 								<br><br>
 								{{ DPage.moreDetails.row3.description2 }}
@@ -148,7 +148,7 @@
 							<div class="w-100 text-center">
 								<RouterLink to="/our-team">
 									<BButton
-										variant="primary"
+										variant="outline-primary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>

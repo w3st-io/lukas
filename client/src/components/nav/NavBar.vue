@@ -1,8 +1,8 @@
 <template>
-	<div class="w-100 pt-4 bg-info border-bottom border-primary">
-		<BContainer bg-variant="dark" class="py-3 d-flex container-fluid">
+	<div class="w-100 pt-4 border-bottom border-primary">
+		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid py-3">
 			<!-- Title -->
-			<div class="text-center" style="">
+			<div class="" style="">
 				<RouterLink to="/" class="text-decoration-none">
 					<h1 class="m-0 font-weight-bold">{{ companyInfo.companyName }}</h1>
 					<h6 class="m-0 px-2 font-weight-bold bg-secondary text-light">
@@ -12,11 +12,12 @@
 			</div>
 
 			<!-- Links -->
-			<div class="d-none d-lg-block mx-auto">
+			<div class="d-none d-lg-block">
 				<a :href="companyInfo.googleMapsLink">
-					<BButton variant="none" class="w-100 mb-2 text-primary">
+					<BButton variant="primary" class="w-100 mb-2">
 						<h5 class="m-0">
-							<MapPinIcon size="1x"/> {{ companyInfo.address }}
+							<MapPinIcon size="1x" class="mr-2" />
+							{{ companyInfo.address }}
 						</h5>
 					</BButton>
 				</a><br>
@@ -28,9 +29,9 @@
 					:to="button.path"
 				>
 					<BButton
-						variant="secondary"
-						class="mx-1"
-						size="sm"
+						variant="info"
+						class="mx-1 px-1 py-1 font-weight-bold text-secondary"
+						size=""
 					>
 						<span v-if="button.navIcon" v-html="button.navIcon"></span>
 						<span v-else>{{ button.text }}</span>
@@ -39,7 +40,7 @@
 			</div>
 
 			<!-- Phone # & Social Media-->
-			<div class="ml-auto text-center text-lg-right" style="">
+			<div class="text-center text-lg-right" style="">
 				<a :href="companyInfo.phoneNumberLink">
 					<BButton variant="secondary" class="mb-3">
 						<PhoneIcon size="2x" />
