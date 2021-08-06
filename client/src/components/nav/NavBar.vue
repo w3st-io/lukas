@@ -54,7 +54,7 @@
 			<!-- Phone # & Social Media-->
 			<div class="text-right">
 				<a :href="companyInfo.phoneNumberLink">
-					<BButton variant="secondary" class="mb-3">
+					<BButton variant="secondary" class="mb-2">
 						<PhoneIcon size="2x" />
 					</BButton>
 				</a>
@@ -70,10 +70,10 @@
 		</BContainer>
 
 		<BContainer>
-			<!-- Hidden Menu Button -->
+			<!-- [HIDDEN] Menu Button -->
 			<div class="w-100 d-block d-lg-none mb-3">
 				<BButton
-					variant="primary"
+					variant="info"
 					class="w-100"
 					@click="toggle()"
 				><MenuIcon /></BButton>

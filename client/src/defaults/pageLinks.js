@@ -21,6 +21,7 @@ module.exports = [
 		}),
 		children: [],
 	},
+	/*
 	{
 		path: '/services',
 		text: 'Services',
@@ -31,13 +32,13 @@ module.exports = [
 			},
 		],
 	},
-	/*
+	*/
 	{
 		path: '/menu',
 		text: 'Menu',
 		children: [],
 	},
-	*/
+	/*
 	{
 		path: '/faq',
 		text: 'FAQ',
@@ -47,8 +48,9 @@ module.exports = [
 		path: '/our-team',
 		text: 'Our Team',
 		children: [],
-
+		
 	},
+	*/
 	{
 		path: '/about',
 		text: 'About',

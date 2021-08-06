@@ -62,5 +62,13 @@
 			if (this.reqData.status) { this.menu = this.reqData.menu }
 			else { this.error = this.reqData.message }
 		},
+
+		mounted() {
+			this.$store.state.navbarSpacer = true
+		},
+
+		destroyed() {
+			this.$store.state.navbarSpacer = false
+		},
 	}
 </script>

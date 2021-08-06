@@ -44,5 +44,13 @@
 				pageData: pageData,
 			}
 		},
+
+		mounted() {
+			this.$store.state.navbarSpacer = true
+		},
+
+		destroyed() {
+			this.$store.state.navbarSpacer = false
+		},
 	}
 </script>

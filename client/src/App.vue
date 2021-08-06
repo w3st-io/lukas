@@ -6,7 +6,7 @@
 		<div
 			v-if="$store.state.navbarSpacer"
 			id="navbar-spacer"
-			style="height: 149.02px;"
+			class="nav-spacer"
 		/>
 
 		<!-- RouterView -->
@@ -37,4 +37,10 @@
 
 	* { font-family: 'Hahmlet', serif !important; }
 	h1,h2,h3,h4,h5,h6 { font-family: 'Balthazar', serif !important; }
+
+	.nav-spacer { height: 149.02px; }
+
+	@media (max-width: 990px) {
+		.nav-spacer { height: 174.06px; }
+	}
 </style>

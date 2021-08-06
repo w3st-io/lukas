@@ -3,7 +3,7 @@
 		<BCard bg-variant="light" class=" shadow">
 			<BRow class="mb-3">
 				<BCol cols="12">
-					<h1 class="text-center font-weight-bold text-info">
+					<h1 class="text-center font-weight-bold text-primary">
 						{{ pageData.title }}
 					</h1>
 				</BCol>
@@ -22,25 +22,25 @@
 					</h1>
 
 					<!-- Number -->
-					<h3 class="text-secondary">Number</h3>
+					<h3 class="text-dark">Number</h3>
 					<a
 						:href="companyInfo.phoneNumberLink"
 						class="text-decoration-none"
 					>
-						<p class="h5 mb-4 font-weight-bold text-info">
+						<BButton class="h5 mb-4 font-weight-bold">
 							{{ companyInfo.phoneNumber }}
-						</p>
+						</BButton>
 					</a>
 
 					<!-- Location -->
-					<h3 class="text-secondary">Location</h3>
+					<h3 class="text-dark">Location</h3>
 					<a
 						:href="companyInfo.googleMapsLink"
 						class="text-decoration-none text-info"
 					>
-						<p class="h5 mb-4 font-weight-bold">
+						<BButton class="h5 mb-4 font-weight-bold">
 							{{ companyInfo.address }}
-						</p>
+						</BButton>
 					</a>
 
 					<!-- Hours -->
@@ -49,7 +49,7 @@
 						<li
 							v-for="(hoo, index) in companyInfo.hoursOfOperation"
 							:key="index"
-							class="text-primary h6"
+							class="h5 text-dark"
 						>{{ hoo.days }}: {{ hoo.hours }}</li>
 					</ul>
 					<hr>
@@ -61,7 +61,7 @@
 					class="px-5"
 					data-aos="fade"
 				>
-					<p class="h5 text-secondary">
+					<p class="h5 text-dark">
 						<img
 							:src="pageData.image"
 							class="w-100 float-right m-3 rounded"
@@ -98,6 +98,14 @@
 				companyInfo: companyInfo,
 				pageData: pageData,
 			}
+		},
+
+		mounted() {
+			this.$store.state.navbarSpacer = true
+		},
+
+		destroyed() {
+			this.$store.state.navbarSpacer = false
 		},
 	}
 </script>
