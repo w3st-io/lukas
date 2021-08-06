@@ -102,7 +102,7 @@
 							<div class="w-100 text-center">
 								<a href="/services/#reiki">
 									<BButton
-										variant="outline-secondary"
+										variant="secondary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>
@@ -117,7 +117,7 @@
 							:src="DPage.moreDetails.row2.image"
 							alt="No Image"
 							data-aos="fade"
-							class="w-100 mb-3 shadow"
+							class="w-100 mb-5 shadow"
 							style="height: 400px; object-fit: cover;"
 						>
 					</BCol>
@@ -147,7 +147,7 @@
 							<div class="w-100 text-center">
 								<RouterLink to="/our-team">
 									<BButton
-										variant="outline-primary"
+										variant="secondary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>
