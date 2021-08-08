@@ -12,18 +12,8 @@ import directions from '@/pages/directions'
 import faq from '@/pages/faq'
 import gallery from '@/pages/gallery'
 import ourTeam from '@/pages/our-team'
-import payment from '@/pages/payment'
-import payment_success from '@/pages/payment/success'
 import menu from '@/pages/menu'
 import services from '@/pages/services'
-import services_chakraBalancing from '@/pages/services/chakra-balancing'
-import services_crystalHealing from '../pages/services/crystal-healing'
-import services_essentialOils from '@/pages/services/essential-oils'
-import services_footDetoxAndSpa from '@/pages/services/foot-detox-and-spa'
-import services_kengenWater from '@/pages/services/kengen-water'
-import services_oracleCardReadings from '@/pages/services/oracle-card-readings'
-import services_reikiChargedWellnessProducts from '@/pages/services/reiki-charged-wellness-products'
-import services_reiki from '@/pages/services/reiki'
 import notFound from '@/pages/404'
 
 
@@ -39,51 +29,49 @@ const router = new VueRouter({
 			name: '/',
 			component: index,
 		},
+		// About //
 		{
 			path: '/about',
 			name: 'about',
 			component: about,
 		},
+		// Book //
 		{
 			path: '/book',
 			name: 'book',
 			component: book,
 		},
+		// Contact //
 		{
 			path: '/contact',
 			name: 'contact',
 			component: contact,
 		},
+		// Directions //
 		{
 			path: '/directions',
 			name: 'directions',
 			component: directions,
 		},
+		// FAQ //
 		{
 			path: '/faq',
 			name: 'faq',
 			component: faq,
 		},
+		// Gallery //
 		{
 			path: '/gallery',
 			name: 'gallery',
 			component: gallery,
 		},
+		// Our Team //
 		{
 			path: '/our-team',
 			name: 'our-team',
 			component: ourTeam,
 		},
-		{
-			path: '/payment/:product_id',
-			name: 'payment',
-			component: payment,
-		},
-		{
-			path: '/payment/success',
-			name: 'payment_success',
-			component: payment_success,
-		},
+		// Menu //
 		{
 			path: '/menu',
 			name: 'menu',
@@ -94,46 +82,6 @@ const router = new VueRouter({
 			path: '/services',
 			name: 'services',
 			component: services,
-		},
-		{
-			path: '/services/chakra-balancing',
-			name: 'services_chakraBalancing',
-			component: services_chakraBalancing,
-		},
-		{
-			path: '/services/crystal-healing',
-			name: 'services_crystalHealing',
-			component: services_crystalHealing,
-		},
-		{
-			path: '/services/essential-oils',
-			name: 'services_essentialOils',
-			component: services_essentialOils,
-		},
-		{
-			path: '/services/foot-detox-and-spa',
-			name: 'services_footDetoxAndSpa',
-			component: services_footDetoxAndSpa,
-		},
-		{
-			path: '/services/kengen-water',
-			name: 'services_kengenWater',
-			component: services_kengenWater,
-		},
-		{
-			path: '/services/oracle-card-readings',
-			name: 'services_oracleCardReadings',
-			component: services_oracleCardReadings,
-		},
-		{
-			path: '/services/reiki',
-			name: 'services_reiki',
-			component: services_reiki,
-		},
-		{
-			path: '/services/reiki-charged-wellness-products',
-			name: 'services_reikiChargedWellnessProducts',
-			component: services_reikiChargedWellnessProducts,
 		},
 		// Not-Found //
 		{

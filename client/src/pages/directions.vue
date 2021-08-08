@@ -2,18 +2,18 @@
 	<BContainer class="my-4">
 		<BCard bg-variant="light" class="mt-3 shadow">
 			<BRow>
-				<BCol cols="12" class="my-3 text-center">
+				<BCol cols="12" class="mb-3 text-center">
 					<h1 class="text-center font-weight-bold text-primary">{{ DPage.title }}</h1>
 				</BCol>
 
 				<BCol cols="12" class="text-center">		
 					<a
 						:href="DPage.googleMapsLink"
-						class="mt-5 text-secondary"
-					><p class="h2">{{ DPage.address }}</p></a>
+						class="text-dark"
+					><p class="h2 mb-4">{{ DPage.address }}</p></a>
 
 					<a :href="DPage.googleMapsLink" class="text-secondary">
-						<BButton variant="secondary" size="lg" class="my-3">
+						<BButton variant="secondary" size="lg" class="mb-4">
 							<MapPinIcon size="1x" />
 							{{ DPage.buttonText }}
 						</BButton>
@@ -24,7 +24,7 @@
 						width="600" height="450"
 						allowfullscreen="true"
 						loading="lazy"
-						class="w-100 shadow"
+						class="w-100"
 						style="border: 0;"
 					></iframe>
 				</BCol>
@@ -49,6 +49,14 @@
 			return {
 				DPage: DPage,
 			}
+		},
+
+		mounted() {
+			this.$store.state.navbarSpacer = true
+		},
+
+		destroyed() {
+			this.$store.state.navbarSpacer = false
 		},
 	}
 </script>

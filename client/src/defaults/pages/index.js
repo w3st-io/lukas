@@ -1,24 +1,23 @@
 const companyInfo = require('../companyInfo')
-const services = require('./services')
 
-// [EXPORT] //
 module.exports = {
 	// Caraousel Slider //
 	caraousel: [
 		{
 			caption:'',
 			text: '',
-			img: require('../../assets/images/pages/index/slide1.jpg'),
+			img: 'https://images2.imgbox.com/46/5e/GsDTZKNN_o.jpg',
 		},
 		{
 			caption: '',
 			text: '',
-			img: require('../../assets/images/pages/index/slide2.jpg'),
+			img: 'https://images2.imgbox.com/f0/8e/DsCHoGCu_o.jpg',
 		},
 	],
 
 	// Main Details Company Info //
 	mainDetails: {
+		companyName: companyInfo.companyName,
 		caption1: companyInfo.companyCaption1,
 		address: companyInfo.address,
 		googleMapsLink: companyInfo.googleMapsLink,
@@ -26,16 +25,7 @@ module.exports = {
 		text: 'By the hour, apointments only',
 	},
 
-	sliderImages: [
-		require('../../assets/images/pages/index/slider/1.jpg'),
-		require('../../assets/images/pages/index/slider/2.jpg'),
-		require('../../assets/images/pages/index/slider/3.jpg'),
-		require('../../assets/images/pages/index/slider/4.jpg'),
-		require('../../assets/images/pages/index/slider/5.jpg'),
-		require('../../assets/images/pages/index/slider/6.jpg'),
-		require('../../assets/images/pages/index/slider/7.jpg'),
-		require('../../assets/images/pages/index/slider/8.jpg'),
-	],
+	sliderImages: [],
 
 	moreDetails: {
 		row1: {
@@ -43,25 +33,25 @@ module.exports = {
 		},
 
 		row2: {
-			header: services.services[0].title,
+			header: 'Our Food',
 			
-			text: services.services[0].description,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
 
-			image: require('../../assets/images/pages/index/wwcdfy.jpg'),
+			image: 'https://images2.imgbox.com/aa/6b/0G8ANm6G_o.jpeg',
 		},
 	
 		row3: {
-			header: 'Meet Pamela',
+			header: 'Genuinely Equadorian!',
 			
-			description1: 'Pamela, Owner and Founder of Balance Within is dedicated to assisting people to find peace within their lives.',
+			description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
 
-			description2: 'As a Intuitive Healer, Reiki Practitioner and Wellness Coach - I offer my gifts, tools and teachings to assist others in their wellness journey for optimal health and it starts with mind, body and spirit - Reiki Energy Healing, Chakra Clearing and Attunements, Crystal Healing, Sound Bowl Healing...',
+			description2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
 
 			caraousel: [
 				{
 					caption: '',
 					text: '',
-					img: require('../../assets/images/pages/index/owner.jpg'),
+					img: 'https://images2.imgbox.com/40/7b/xuuaTukm_o.png',
 				},
 			],
 		},

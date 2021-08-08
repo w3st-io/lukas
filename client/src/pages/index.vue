@@ -3,28 +3,31 @@
 		<!-- Caraousel -->
 		<BCarousel
 			:showContent="true"
-			:mainText="'Healing for the Mind, Body and Soul'"
+			:mainText="'Food that brings you closer to home..'"
 			:slideObjs="DPage.caraousel"
 			:maxHeight="600"
 			:rellaxNumber="1"
-			class="mb-4 shadow"
+			class="mb-5 shadow"
 			data-aos="fade-up"
 		/>
 
 		<!-- Main Details -->
-		<BContainer class="mb-4 text-center">
+		<BContainer class="mb-5 text-center">
 			<BCard bg-variant="light" border-variant="primary" class="rounded shadow">
 				<!-- Captions -->
 				<h2 data-aos="fade" class="font-weight-bold text-primary">
+					{{ DPage.mainDetails.companyName }}
+				</h2>
+
+				<!-- Captions -->
+				<h2 data-aos="fade" class="font-weight-bold text-secondary">
 					{{ DPage.mainDetails.caption1 }}
 				</h2>
 				
 				<!-- Address -->
-				<a :href="DPage.mainDetails.googleMapsLink">
-					<p class="h6 mb-4 text-center font-weight-bold text-secondary">
-						Our Hours
-					</p>
-				</a>
+				<p class="h4 text-center font-weight-bold text-dark">
+					<span class="px-3 bg-info">Our Hours</span>
+				</p>
 
 				<!-- Hours of Operation -->
 				<ul class="m-0 mb-4 p-0 text-dark">
@@ -32,12 +35,8 @@
 						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
 						:key="index"
 						class="m-0 list-unstyled text-center"
-					><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
+					><p class="h4">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 				</ul>
-
-				<RouterLink to="/book" class="h5 text-secondary">
-					{{ DPage.mainDetails.text }}
-				</RouterLink>
 			</BCard>
 		</BContainer>
 
@@ -55,9 +54,9 @@
 
 		<!-- More Details -->
 		<BContainer fluid class="mb-5 bg-white border-top border-secondary shadow-lg">
-			<BContainer class="pb-3">
+			<BContainer class="py-3">
 				<!-- Black Marble Now Booking New Clients -->
-				<BRow class="mb-3" data-aos="fade">
+				<BRow v-if="0 == 1" class="mb-3" data-aos="fade">
 					<Transition name="fade">
 						<BCol cols="12">
 							<img
@@ -72,14 +71,14 @@
 									to="book"
 									class="font-weight-bold text-decoration-none"
 								>
-									<h2 class="font-weight-bold text-primary">
+									<h2 class="font-weight-bold text-light">
 										Now Booking New Clients
 									</h2>
 								</RouterLink>
 								
 
 								<BButton
-									variant="secondary"
+									variant="light"
 									size="lg"
 									class="mt-3"
 									@click="redirectCompanyInfo()"
@@ -93,17 +92,17 @@
 				<BRow class="mb-3">
 					<BCol cols="12" sm="8">
 						<div v-if="show">
-							<h2 class="text-primary font-weight-bold">
+							<h2 class="font-weight-bold text-primary">
 								{{ DPage.moreDetails.row2.header }}
 							</h2>
-							<p class="mb-4 h5 text-secondary">
+							<p class="mb-4 h5 text-dark">
 								{{ DPage.moreDetails.row2.text }}
 							</p>
 
 							<div class="w-100 text-center">
 								<a href="/services/#reiki">
 									<BButton
-										variant="primary"
+										variant="secondary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>
@@ -118,7 +117,7 @@
 							:src="DPage.moreDetails.row2.image"
 							alt="No Image"
 							data-aos="fade"
-							class="w-100 mb-3 shadow"
+							class="w-100 mb-5 shadow"
 							style="height: 400px; object-fit: cover;"
 						>
 					</BCol>
@@ -139,7 +138,7 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
 							</h2>
-							<p class="mb-4 h5 text-secondary">
+							<p class="mb-4 h5 text-dark">
 								{{ DPage.moreDetails.row3.description1 }}
 								<br><br>
 								{{ DPage.moreDetails.row3.description2 }}
@@ -148,7 +147,7 @@
 							<div class="w-100 text-center">
 								<RouterLink to="/our-team">
 									<BButton
-										variant="primary"
+										variant="secondary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>

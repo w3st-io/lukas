@@ -1,46 +1,60 @@
 <template>
-	<div class="w-100 pt-4 bg-info border-bottom border-primary">
-		<BContainer bg-variant="dark" class="py-3 d-flex container-fluid">
+	<div class="w-100 position-absolute nav shadow">
+		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid py-3">
 			<!-- Title -->
-			<div class="text-center" style="">
+			<div class="" style="">
 				<RouterLink to="/" class="text-decoration-none">
-					<h1 class="m-0 font-weight-bold">{{ companyInfo.companyName }}</h1>
-					<h6 class="m-0 px-2 font-weight-bold bg-secondary text-light">
-						{{ companyInfo.companyCaption1 }}
-					</h6>
+					<h1
+						class="m-0 font-weight-bold title text-center"
+						style="font-size: 3em;"
+					>{{ companyInfo.companyName }}</h1>
+					<h4
+						class="
+							m-0
+							px-2
+							font-weight-bold
+							bg-secondary
+							text-light
+							text-center
+						"
+					>{{ companyInfo.companyCaption1 }}</h4>
 				</RouterLink>
 			</div>
 
 			<!-- Links -->
-			<div class="d-none d-lg-block mx-auto">
+			<div class="d-none d-lg-block bg-primary p-0">
 				<a :href="companyInfo.googleMapsLink">
-					<BButton variant="none" class="w-100 mb-2 text-primary">
+					<BButton variant="info" class="w-100 mb-4 py-3 rounded-0">
 						<h5 class="m-0">
-							<MapPinIcon size="1x"/> {{ companyInfo.address }}
+							<MapPinIcon size="1x" class="mr-2" />
+							{{ companyInfo.address }}
 						</h5>
 					</BButton>
 				</a><br>
 
-				<!-- Menu Items -->
-				<RouterLink
-					v-for="(button, i) in buttons"
-					:key="i"
-					:to="button.path"
-				>
-					<BButton
-						variant="none"
-						class="mx-1 px-1 py-0 font-weight-bold text-secondary"
+				<div class="">
+					<!-- Menu Items -->
+					<RouterLink
+						v-for="(button, i) in buttons"
+						:key="i"
+						:to="button.path"
 					>
-						<span v-if="button.navIcon" v-html="button.navIcon"></span>
-						<span v-else>{{ button.text }}</span>
-					</BButton>
-				</RouterLink>
+						<BButton
+							variant="secondary"
+							class="px-2 py-1 font-weight-bold rounded-0"
+							size=""
+						>
+							<span v-if="button.navIcon" v-html="button.navIcon"></span>
+							<span v-else>{{ button.text }}</span>
+						</BButton>
+					</RouterLink>
+				</div>
 			</div>
 
 			<!-- Phone # & Social Media-->
-			<div class="ml-auto text-center text-lg-right" style="">
+			<div class="text-right">
 				<a :href="companyInfo.phoneNumberLink">
-					<BButton variant="secondary" class="mb-3">
+					<BButton variant="secondary" class="mb-2">
 						<PhoneIcon size="2x" />
 					</BButton>
 				</a>
@@ -48,7 +62,7 @@
 				<div class="w-100">
 					<SocialMediaPlug
 						size="1.8x"
-						variant="secondary"
+						variant="light"
 						class="d-none d-sm-block float-lg-right"
 					/>
 				</div>
@@ -56,10 +70,10 @@
 		</BContainer>
 
 		<BContainer>
-			<!-- Hidden Menu Button -->
+			<!-- [HIDDEN] Menu Button -->
 			<div class="w-100 d-block d-lg-none mb-3">
 				<BButton
-					variant="primary"
+					variant="info"
 					class="w-100"
 					@click="toggle()"
 				><MenuIcon /></BButton>
@@ -105,3 +119,16 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.title {
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: rgb(255, 255, 255);
+	}
+
+	.nav {
+		z-index: 1000;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.72);
+	}
+</style>
