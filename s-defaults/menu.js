@@ -1,10 +1,13 @@
 module.exports = [
 	{
-		category: 'category',
+		category: 'Platos Tipicos',
 		items: [
 			{
-				name: 'product',
-				price: 0.00
+				id: '',
+				name: 'hornado',
+				description: '',
+				price: 0.00,
+
 			},
 		]
 	},
@@ -13,6 +16,7 @@ module.exports = [
 		items: [
 			{
 				name: 'product',
+				description: '',
 				price: 0.00
 			},
 		]
