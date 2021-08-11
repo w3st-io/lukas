@@ -185,17 +185,17 @@
 	export default {
 		name: 'Home',
 
-		components: {
-			BCarousel,
-			Conveyor,
-		},
-
 		data() {
 			return {
 				DPage: DPage,
 				reqData: '',
 				show: false,
 			}
+		},
+
+		components: {
+			BCarousel,
+			Conveyor,
 		},
 
 		async created() {},
