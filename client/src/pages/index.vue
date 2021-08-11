@@ -162,10 +162,10 @@
 						<h1 class="text-center text-primary">Interested?</h1>
 
 						<div class="text-center">
-							<RouterLink to="/services">
-								<BButton variant="primary">
-									Check Out Our Services
-								</BButton>
+							<RouterLink to="/menu">
+								<BButton
+									variant="primary"
+								>Check Out Our Menu</BButton>
 							</RouterLink>
 						</div>
 					</BCol>
@@ -177,9 +177,9 @@
 
 <script>
 	// [IMPORT] Personal //
-	import DPage from '@/defaults/pages'
 	import BCarousel from '@/components/display/BCarousel'
 	import Conveyor from '@/components/display/Conveyor'
+	import DPage from '@/defaults/pages'
 	import router from '@/router'
 
 	export default {
