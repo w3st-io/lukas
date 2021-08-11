@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="my-3">
+	<BContainer class="my-5">
 		<BRow>
 			<BCol cols="12">
 				<BCard variant="white" class="text-center shadow">
