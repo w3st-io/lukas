@@ -4,12 +4,12 @@
 			<BRow>
 				<!-- Title -->
 				<BCol cols="12">
-					<h1 class="text-center font-weight-bold text-primary ">
+					<h1 class="text-center font-weight-bold text-primary">
 						{{ DPage.title }}
 					</h1>
 				</BCol>
 
-				<!-- Permanent Makeup -->
+				<!-- MENU SECTIONS -->
 				<BCol
 					v-for="(menuItems, i) in menu"
 					:key="i"
@@ -21,16 +21,20 @@
 					</h2>
 
 					<BListGroup class="mb-3">
+						<!-- MENU SECTION ITEMS -->
 						<BListGroupItem
-							v-for="(item, i) in menuItems.items"
-							:key="i"
-							variant="secondary"
+							v-for="(item, ii) in menuItems.items"
+							:key="ii"
+							variant="info"
 							class="d-flex justify-content-between align-items-center"
 						>
-							<p class="m-0 h5">{{ item.name }}</p>
-							<BBadge variant="primary" class="badge-pill">
+							<div>
+								<h5 class="m-0 text-primary">{{ item.name }}</h5>
+								<p>{{ item.description }}</p>
+							</div>
+							<BBadge variant="secondary" class="badge-pill">
 								<p class="m-0 h5 font-weight-bold">
-									${{ item.price }}
+									{{ item.price }}
 								</p>
 							</BBadge>
 						</BListGroupItem>
