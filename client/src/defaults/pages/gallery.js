@@ -3,7 +3,9 @@ module.exports = {
 	title: 'Gallery',
 	rx: [
 		{
-			c1: { title: 'Menu Items' },
+			c1: {
+				title: 'Menu Items'
+			},
 	
 			cx: [
 				'https://images2.imgbox.com/46/5e/GsDTZKNN_o.jpg',
@@ -11,7 +13,9 @@ module.exports = {
 			]
 		},
 		{
-			c1: { title: 'Our Wonderfull Saff' },
+			c1: {
+				title: 'Our Wonderfull Saff'
+			},
 	
 			cx: [
 				'',
