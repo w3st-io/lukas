@@ -30,21 +30,13 @@
 			>
 				<!-- isHero -->
 				<div v-if="showContent" class="py-2 rounded">
-					<h1 class="title d-none d-md-block font-weight-bold text-light">
+					<h1 class="title d-none d-md-block font-weight-bold text-secondary">
 						{{ mainText }}
 					</h1>
 
-					<h4 class="title d-block d-md-none font-weight-bold text-light">
+					<h4 class="title d-block d-md-none font-weight-bold text-secondary">
 						{{ mainText }}
 					</h4>
-
-					<RouterLink to="/book">
-						<BButton
-							variant="primary"
-							size="lg"
-							class="m-auto shadow"
-						>Book Apointment</BButton>
-					</RouterLink>
 				</div>
 			</BCarouselSlide>
 		</BCarousel>
