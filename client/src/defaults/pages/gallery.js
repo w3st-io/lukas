@@ -3,28 +3,18 @@ module.exports = {
 	title: 'Gallery',
 	rx: [
 		{
-			c1: { title: 'Reiki' },
+			c1: { title: 'Menu Items' },
 	
 			cx: [
-				require('../../assets/images/pages/gallery/reiki/0.jpg'),
-				require('../../assets/images/pages/gallery/reiki/1.jpg'),
+				'https://images2.imgbox.com/46/5e/GsDTZKNN_o.jpg',
+				'https://images2.imgbox.com/f0/8e/DsCHoGCu_o.jpg',
 			]
 		},
 		{
-			c1: { title: 'Other' },
+			c1: { title: 'Our Wonderfull Saff' },
 	
 			cx: [
-				require('../../assets/images/pages/gallery/other/0.jpg'),
-				require('../../assets/images/pages/gallery/other/1.jpg'),
-				require('../../assets/images/pages/gallery/other/2.jpg'),
-				require('../../assets/images/pages/gallery/other/3.jpg'),
-				require('../../assets/images/pages/gallery/other/4.jpg'),
-				require('../../assets/images/pages/gallery/other/5.jpg'),
-				require('../../assets/images/pages/gallery/other/6.jpg'),
-				require('../../assets/images/pages/gallery/other/7.jpg'),
-				require('../../assets/images/pages/gallery/other/8.jpg'),
-				require('../../assets/images/pages/gallery/other/9.jpg'),
-				require('../../assets/images/pages/gallery/other/10.jpg'),
+				'',
 			]
 		},
 	]

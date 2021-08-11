@@ -22,15 +22,19 @@
 			</div>
 
 			<!-- Links -->
-			<div class="d-none d-lg-block bg-primary p-0">
+			<div class="d-none d-lg-block p-0">
 				<a :href="companyInfo.googleMapsLink">
-					<BButton variant="info" class="w-100 mb-4 py-3 rounded-0">
+					<BButton variant="info" class="w-100 py-3 rounded-0">
 						<h5 class="m-0">
 							<MapPinIcon size="1x" class="mr-2" />
 							{{ companyInfo.address }}
 						</h5>
 					</BButton>
 				</a><br>
+
+				<div class="w-100 py-1 text-center bg-primary">
+					<a href="" class="text-light">{{ companyInfo.phoneNumber }}</a>
+				</div>
 
 				<div class="">
 					<!-- Menu Items -->
